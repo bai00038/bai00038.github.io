@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(230, 241, 255);
+}
+/* this is a comment */
+header{
+    background-color: rgb(7, 29, 47);
+    color: rgb(203, 225, 244);
+    padding: 1rem 2rem; 
+    margin: 1rem;
+    /* border: 2rem solid rgb(198, 63, 63); */
+    /* 1rem=16px */
+}
+h1,h2,h3{
+    text-decoration: underline;
+}
+p{
+    font-size: 1.2rem;
+}
+div p{
+    font-size: 0.8rem;
+    margin: 1rem o;
+}
+/* to target a class use the dot (.) */
+.notes{
+    border: 2px dashed rgb(143, 156, 229);
+}
+.highlight{
+    background-color: rgb(167, 167, 220);
+    border: 2px solid red !important;
+}
+#goals{
+    font-weight: 700;
+}
+p{
+    font-weight: 100;
+}
+li:nth-child(3n+1){
+    background-color: rgb(70, 112, 240);
+    color: rgb(230, 241, 255);
+}
+a{
+    display: block;
+    color: black;
+}
+a[href^="http"]{
+    color: green;
+}
+a:link{
+    color: rgb(8, 17, 54);
+}
+a:hover{
+    color:rgb(34, 47, 233)
+}
+a:visited{
+    color:rgb(109, 120, 170)
+}
+a:active{
+    color:rgb(104, 97, 245)
+}
+span{
+    color:inherit;
+}
+/* forces the span to inherit the color from the parent */
+span{
+    color: blue;
+}
+span{
+    color:initial;
+}
+/* takes you back to the browser default */
+span{
+    color:unset;
+}

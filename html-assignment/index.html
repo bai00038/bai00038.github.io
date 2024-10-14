@@ -4,21 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Bai Bing</title>
 </head>
 
 <body>
     <header>
-        <h1>Bai Bing</h1>
+        <h1 class="site-title">Bai Bing</h1>
     </header>
     <!-- Navigation -->
     <nav>
-        <a href="notes.html">My Notes</a>
+        <ul>
+            <li><a href="notes.html">My Notes</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-image">My Image</a></li>
+            <li><a href="#my-hobbies">My Hobbies</a></li>
+        </ul>
     </nav>
     <main>
         <article>
             <h2>About Me</h2>
-            <p>Hi, I'm Bai Bing, and I've been working as a <abbr title="User Interface">UI</abbr> designer for six years. Although I'm more of an
+            <p>Hi, I'm Bai Bing, and I've been working as a <abbr title="User Interface">UI</abbr> designer for six
+                years. Although I'm more of an
                 introvert, I'm really passionate about design, and that has pushed me to constantly learn and take on
                 new challenges. I joined this program because I want to expand my skills and explore new job
                 opportunities, with the goal of growing both personally and professionally.</p>
@@ -31,15 +38,17 @@
         </article>
 
         <!-- This is my image -->
-        <h2>My image</h2>
-        <img src="./images/bai-bing.jpg" alt="Image of bai-bing" title="baibing" height="500">
+        <h2>My Image</h2>
+        <img id="my-image" src="./images/bai-bing.jpg" alt="Image of bai-bing" title="baibing" height="500">
 
-        <div class="My hobbies">
-        <h2>My hobbies</h2>
-        <ul>
-            <li>Reading</li>
-            <li>Traveling</li>
-        </ul>
+        <div id="my-hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Traveling</li>
+                <li>Cooking</li>
+                <li>Work Out</li>
+            </ul>
         </div>
     </main>
     <footer>
