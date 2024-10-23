@@ -18,7 +18,7 @@ p{
 }
 div p{
     font-size: 0.8rem;
-    margin: 1rem o;
+    margin: 1rem 0;
 }
 /* to target a class use the dot (.) */
 .notes{
