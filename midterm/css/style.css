@@ -121,6 +121,7 @@ form {
 }
 
 .custom-form input[type="radio"]{
+    display: inline-block;
     margin-right: 2rem;
     margin-bottom: 2rem;
 }
