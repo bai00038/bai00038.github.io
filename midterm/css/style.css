@@ -33,12 +33,14 @@ h1 {
 .navbar ul li {
     display: inline;
     font-size: 1.5rem;
-    padding: 0 13%;
     text-align: center;
-
 }
 
-.navbar ul li:not(:last-child) {
+.box {
+    width: 33.3%;
+}
+
+.box:nth-child(1), .box:nth-child(2) {
     border-right: #84aaa7 solid 1px;
 }
 
@@ -88,7 +90,6 @@ h3 {
 }
 
 form {
-    background-color: none;
     border: #84aaa7 solid 1px;
     border-radius: 4px;
     padding: 1rem;
@@ -114,7 +115,8 @@ form {
    height: 5rem; 
 }
 
-.custom-form legend {
+.custom-form span {
+    display: block;
     padding: 0.2rem 0;
 }
 
