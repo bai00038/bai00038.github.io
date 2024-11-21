@@ -131,6 +131,10 @@ form {
     margin-bottom: 2rem;
 }
 
+/* [type="text"] {
+    display: block;
+} */
+
 div button {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;

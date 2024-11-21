@@ -1,0 +1,135 @@
+/* Custom styles */
+
+/* Global styles */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+*,
+*::after
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+.clearfix::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+}
+
+h1 {
+    font-size: 5.063em;
+}
+h2 {
+    font-size: 3.375em;
+}
+h3 {
+    font-size: 2.25em;
+}
+h4 {
+    font-size: 1.5em;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* header styles */
+
+.mobile-logo {
+    max-width: 150px;
+}
+.desktop-logo {
+    display: none;
+}
+
+.banner {
+    height: 600px;
+    background: grey url(../css/images/smog-mobile.jpg) no-repeat center bottom;
+    /* background: color, image, repeat, position */
+    background-size: cover;
+}
+
+.banner h1 {
+    text-align: center;
+    padding-top: 240px;
+    margin: 0;
+    /* color: aliceblue; */
+}
+
+.btnlink {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem;
+    border: 1px solid #00aad8;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    color: inherit;
+}
+
+.btnlink:hover,
+.btnlink:focus {
+    background-color: #00aad8;
+    color:white;
+}
+
+/* footer styles */
+
+.site-footer {
+    border-top: 2px solid #00aad8;
+    padding: 0.5rem 0;
+    margin-top: 2rem;
+}
+
+.copy {
+    text-align: right;
+}
+
+/* desktop styles */
+
+@media screen and (min-width: 600px ){
+    .html {
+        font-size: 16px;
+    }
+    /* header section */
+    .mobile-logo {
+        display: none;
+    }
+    .desktop-logo {
+        display: inline-block;
+        max-width: 300px;
+    }
+    .banner {
+        background-image: url(../css/images/smog-desktop.jpg);
+        color: aliceblue;
+    }
+
+    /* app section */
+
+    .app img {
+        width: 40%;
+        float: left;
+        margin: 1rem;
+    }
+    .app .btnlink {
+        float: right;
+    }
+}
+

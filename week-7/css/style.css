@@ -1,0 +1,99 @@
+/* html {
+    box-sizing: border-box;
+} */
+
+/* *,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 5px solid darkred;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+/*
+Set Width and Border
+*/
+.container{
+    width: 500px;
+    border: 6px solid #111;
+    margin: 40px auto;
+  }
+  img {
+    width: 200px;
+    float: left;
+    padding-right: 10px;
+    margin: 10px 10px;
+  }
+  
+  /*
+  Add some space between the border;
+  */
+  figure{
+    margin: 10px;
+    display: block;
+  }
+  
+  /*
+  Give the caption a distinct style.
+  */
+  figcaption, a {
+    font-family: arial, helvetica, sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    background:#111;
+    color: #fff;
+  }
+  
+  /* 
+  Responsive Image
+  The image will scale with the size of it's container
+  */
+  figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .box1, .box2, .box3, .box4 {
+    width: 25%;
+    height: 100px;
+    float: left;
+  }
+.container1 {
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border: 6px solid black;
+    /* position: relative; */
+}
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .purple{
+    background: purple;
+  }
+  
+  .blue{
+    background: blue;
+    position: relative;
+    top: 50px;
+    right: 50px;
+  }
+  .green{
+    background: green;
+    position: fixed;
+    bottom: 300px;
+  }
+  .orange{
+    background: orange;
+  }
