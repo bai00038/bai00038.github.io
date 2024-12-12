@@ -13,7 +13,7 @@ html {
 }
 
 /* nav global style */
-.nav-container {
+.nav_container {
     display: flex;
     flex-direction: column;
     background-color: #222;
@@ -53,24 +53,24 @@ html {
 }
 
 /* search bar style */
-.search-container {
+.search_container {
     display: flex;
     flex-direction: row;
     height: 2.5rem;
 }
 
-#site-search {
+#site_search {
     height: 2.5rem;
     width: 100%;
     padding: 1rem;
 }
+
 /* hide search */
-label[for="site-search"]
-{
-    display:none;
+label[for="site_search"] {
+    display: none;
 }
 
-.search-button {
+.search_button {
     height: 2.5rem;
     width: 2.5rem;
     border: solid 1px #C78C06;
@@ -81,7 +81,7 @@ label[for="site-search"]
 
 /* banner style */
 /* banner background */
-.main-banner {
+.main_banner {
     background-color: #222;
     background-image: url(../images/main-banner.jpg);
     background-repeat: no-repeat;
@@ -104,7 +104,7 @@ label[for="site-search"]
 }
 
 /* Welcome to Three Star Media */
-.main-banner h1 {
+.main_banner h1 {
     font-size: 4.5rem;
     color: white;
     font-weight: 600;
@@ -113,7 +113,7 @@ label[for="site-search"]
 }
 
 /* paragraph style */
-.main-banner p {
+.main_banner p {
     font-size: 1rem;
     color: white;
     font-weight: 300;
@@ -121,7 +121,7 @@ label[for="site-search"]
 }
 
 /* button style */
-.btn-contect {
+.btn_contect {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,13 +139,13 @@ label[for="site-search"]
 }
 
 /* About framework */
-#about-container {
+#about_container {
     background-color: #FFE6AC;
     width: 100%;
 }
 
-/* about-content layout */
-.about-content {
+/* about content layout */
+.about_content {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -155,14 +155,14 @@ label[for="site-search"]
 }
 
 /* about img */
-.about-content img {
+.about_content img {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* About Us */
-.about-text h2 {
+.about_text h2 {
     font-size: 3rem;
     color: #222;
     font-weight: 600;
@@ -170,7 +170,7 @@ label[for="site-search"]
 }
 
 /* about paragraph style*/
-.about-text p {
+.about_text p {
     font-size: 0.8rem;
     color: #222;
     font-weight: 400;
@@ -178,23 +178,30 @@ label[for="site-search"]
 }
 
 /* serveices framework */
-#services-container {
+#services_container {
     display: flex;
     flex-direction: column;
     background-color: white;
+    padding-bottom: 1rem;
     margin: 1rem;
 }
 
-/* services-content layout */
-.services-item {
+.services_items {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+/* services content layout */
+.services_item {
     display: flex;
     flex-direction: column;
     background-color: #FFE6AC;
-    margin: 1rem 0;
+    /* margin-bottom: 1rem; */
 }
 
-/* services-text layout */
-.services-text {
+/* services text layout */
+.services_text {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -202,7 +209,7 @@ label[for="site-search"]
 }
 
 /* Our Sevices */
-.services-content h2 {
+.services_content h2 {
     font-size: 3rem;
     color: #222;
     font-weight: 600;
@@ -210,20 +217,20 @@ label[for="site-search"]
 }
 
 /* Digital transportation / Marketing / Video Production / Web Development / Print  */
-.services-content h3 {
+.services_content h3 {
     font-size: 2rem;
     color: #222;
     font-weight: 600;
     margin-top: 1rem;
 }
 
-.services-content p {
+.services_content p {
     font-size: 0.8rem;
     color: #222;
     font-weight: 400;
 }
 
-.services-content button {
+.services_content button {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -236,7 +243,7 @@ label[for="site-search"]
 }
 
 /* vision banner framework */
-.banner-container {
+.banner_container {
     display: flex;
     flex-direction: column;
     background-color: #C78C06;
@@ -250,7 +257,7 @@ label[for="site-search"]
 }
 
 /* vision banner layout */
-.banner-content {
+.banner_content {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -258,21 +265,21 @@ label[for="site-search"]
 }
 
 /* Our Vision */
-.banner-content h2 {
+.banner_content h2 {
     font-size: 2rem;
     color: white;
     font-weight: 600;
     margin-top: 1rem;
 }
 
-.banner-content p {
+.banner_content p {
     font-size: 0.8rem;
     color: white;
     font-weight: 400;
     padding: 1rem 0;
 }
 
-.banner-content button {
+.banner_content button {
     display: flex;
     justify-content: center;
     width: fit-content;
@@ -285,34 +292,34 @@ label[for="site-search"]
 }
 
 /* team framework */
-#team-container {
+#team_container {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
 }
 
-.team-content {
+.team_content {
     display: flex;
     flex-direction: column;
     margin: 1rem;
 }
 
 /* team cards layout */
-.team-item {
+.team_item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #FFE6AC;
 }
 
-.team-text {
+.team_text {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
 /* our team */
-.team-content h2 {
+.team_content h2 {
     font-size: 3rem;
     color: #222;
     font-weight: 600;
@@ -320,7 +327,7 @@ label[for="site-search"]
 
 /* John Doe */
 /* Bob Rite */
-.team-content h3 {
+.team_content h3 {
     font-size: 2rem;
     color: #222;
     font-weight: 600;
@@ -328,13 +335,13 @@ label[for="site-search"]
 
 /* CEO and Co-owner */
 /* CFO and Co-owner */
-.team-content h4 {
+.team_content h4 {
     font-size: 1rem;
     color: #222;
     font-weight: 600;
 }
 
-.team-content p {
+.team_content p {
     font-size: 0.8rem;
     color: #222;
     font-weight: 400;
@@ -351,23 +358,23 @@ label[for="site-search"]
 
 
 /* contact framework */
-#contact-container {
+#contact_container {
     display: flex;
     flex-direction: column;
     margin: 1rem;
 }
 
-.contact-content {
+.contact_content {
     display: flex;
     flex-direction: column;
 }
 
-.form-item {
+.form_item {
     display: block;
 }
 
 /* contact us */
-.contact-content h2 {
+.contact_content h2 {
     font-size: 3rem;
     color: #222;
     font-weight: 600;
@@ -377,7 +384,7 @@ label[for="site-search"]
 /* send us a message */
 /* hours of operation */
 /* lacation */
-.contact-content h3 {
+.contact_content h3 {
     font-size: 2rem;
     color: #222;
     font-weight: 600;
@@ -413,7 +420,7 @@ label {
 }
 
 /* table style */
-.table-content {
+.table_content {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     grid-template-rows: repeat(3, 1fr);
@@ -424,31 +431,31 @@ label {
     border: #222 solid 0.5px;
 }
 
-.table-content :nth-child(1) {
+.table_content :nth-child(1) {
     grid-area: days;
     background-color: #FFE6AC;
     text-align: center;
 }
 
-.table-content :nth-child(2) {
+.table_content :nth-child(2) {
     grid-area: hours;
     background-color: #FFE6AC;
     text-align: center;
 }
 
-.table-content :nth-child(3) {
+.table_content :nth-child(3) {
     grid-area: weekdays;
 }
 
-.table-content :nth-child(4) {
+.table_content :nth-child(4) {
     grid-area: opened;
 }
 
-.table-content :nth-child(5) {
+.table_content :nth-child(5) {
     grid-area: weekend;
 }
 
-.table-content :nth-child(6) {
+.table_content :nth-child(6) {
     grid-area: closed;
 }
 
@@ -486,21 +493,21 @@ footer a {
     }
 
     /* navigation layout */
-    .nav-container {
+    .nav_container {
         display: flex;
         flex-direction: row;
     }
 
     .nav {
         display: flex;
-        flex-direction: row;   
+        flex-direction: row;
         /* height: 120px; */
         max-width: 1200px;
         padding: 0;
         margin: 0 auto;
     }
 
-    .nav-content,
+    .nav_content,
     .navlist ul {
         display: flex;
         flex-direction: row;
@@ -508,27 +515,30 @@ footer a {
         white-space: nowrap;
         gap: 1rem;
     }
+
     .nav-item {
         padding: 1rem;
         text-align: center;
         width: 8rem;
     }
+
     .nav img {
         width: 60px;
         margin: 1rem 0;
     }
+
     .logo {
         margin-right: 13rem;
         background-color: #222;
     }
-    
-    .search-container {
+
+    .search_container {
         width: 200px;
         justify-self: end;
     }
 
     /* main banner layout */
-    .main-banner {
+    .main_banner {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -539,7 +549,7 @@ footer a {
     }
 
     /* about us layout */
-    .about-content {
+    .about_content {
         display: flex;
         flex-direction: row;
         max-width: 1200px;
@@ -547,101 +557,102 @@ footer a {
         margin: 0 auto;
     }
 
-    .about-content img {
+    .about_content img {
         width: 50%;
         margin-right: 1rem;
+        padding: 1rem 0 1rem;
     }
 
     /* services layout */
-    #services-container {
+    #services_container {
         display: flex;
         flex-direction: column;
         max-width: 1200px;
         margin: 0 auto;
     }
 
-    .services-items {
+    .services_items {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1.2fr 0.8fr;
         gap: 1rem;
     }
 
-    .services-items :nth-child(1) {
+    .services_items :nth-child(1) {
         grid-column: 1 / span 3;
         grid-row: 1/ span 1;
 
     }
 
-    .services-items :nth-child(2) {
+    .services_items :nth-child(2) {
         grid-column: 4 / span 3;
         grid-row: 1/ span 1;
     }
 
-    .services-items :nth-child(3) {
+    .services_items :nth-child(3) {
         grid-column: 1 / span 2;
         grid-row: 2/ span 1;
     }
 
-    .services-items :nth-child(4) {
+    .services_items :nth-child(4) {
         grid-column: 3 / span 2;
         grid-row: 2/ span 1;
     }
 
-    .services-items :nth-child(5) {
+    .services_items :nth-child(5) {
         grid-column: 5 / span 2;
         grid-row: 2/ span 1;
     }
 
     /* services button width */
-    .services-content button {
+    .services_content button {
         width: 100%;
     }
 
     /* second banner layout */
-    .banner-container {
+    .banner_container {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    .banner-content {
+    .banner_content {
         max-width: 1200px;
     }
 
     /* team section layout */
-    #team-container {
+    #team_container {
         display: flex;
         flex-direction: column;
         max-width: 1200px;
         margin: 2rem auto;
     }
 
-    .team-content {
+    .team_content {
         margin: 0;
     }
 
-    .team-item {
+    .team_item {
         display: flex;
         flex-direction: row;
     }
 
-    .team-item2 {
+    .team_item2 {
         display: flex;
         flex-direction: row-reverse;
     }
 
-    .team-item img {
+    .team_item img {
         width: 50%;
     }
 
     /* contact layout */
-    .contact-content {
+    .contact_content {
         max-width: 1200px;
         margin: 1rem auto;
     }
 
-    .contact-grid {
+    .contact_grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 2.5fr 1fr;
@@ -649,19 +660,19 @@ footer a {
     }
 
     /* form */
-    .contact-grid :nth-child(1) {
+    .contact_grid :nth-child(1) {
         grid-column: 1/span 2;
         grid-row: 1/span 1;
     }
 
     /* table */
-    .contact-grid :nth-child(2) {
+    .contact_grid :nth-child(2) {
         grid-column: 1/span 4;
         grid-row: 2/span 1;
     }
 
     /* map */
-    .contact-grid :nth-child(3) {
+    .contact_grid :nth-child(3) {
         grid-column: 3/span 2;
         grid-row: 1/span 1;
     }
@@ -678,35 +689,35 @@ footer a {
         border: #222 solid 0.5px;
     }
 
-    .table-content :nth-child(1) {
+    .table_content :nth-child(1) {
         grid-area: days;
         background-color: #FFE6AC;
         text-align: center;
     }
 
-    .table-content :nth-child(2) {
+    .table_content :nth-child(2) {
         grid-area: hours;
         background-color: #FFE6AC;
         text-align: center;
     }
 
-    .table-content :nth-child(3) {
+    .table_content :nth-child(3) {
         grid-area: weekdays;
     }
 
-    .table-content :nth-child(4) {
+    .table_content :nth-child(4) {
         grid-area: opened;
     }
 
-    .table-content :nth-child(5) {
+    .table_content :nth-child(5) {
         grid-area: weekend;
     }
 
-    .table-content :nth-child(6) {
+    .table_content :nth-child(6) {
         grid-area: closed;
     }
 
-    .footer-content{
+    .footer_content {
         max-width: 1200px;
         margin: 0 auto;
     }
