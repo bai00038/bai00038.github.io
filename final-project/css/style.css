@@ -105,7 +105,7 @@ label[for="site_search"] {
 
 /* Welcome to Three Star Media */
 .main_banner h1 {
-    font-size: 4.5rem;
+    font-size: 3rem;
     color: white;
     font-weight: 600;
     margin: 1rem;
@@ -361,7 +361,7 @@ label[for="site_search"] {
 #contact_container {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .contact_content {
@@ -459,9 +459,10 @@ label {
     grid-area: closed;
 }
 
-.location_content {
-    margin: 1rem;
+.map_container > iframe {
+    width: 100%; 
 }
+
 .head,
 .body {
     font-size: 0.8rem;
@@ -549,6 +550,10 @@ footer a {
 
     .toplayer {
         max-width: 1200px;
+    }
+
+    .main_banner h1 {
+        font-size: 4.5rem;
     }
 
     /* about us layout */
@@ -650,10 +655,12 @@ footer a {
     }
 
     /* contact layout */
-    .contact_content {
+    #contact_container {
         max-width: 1200px;
-        margin: 1rem auto;
+        margin: 0 auto;
     }
+
+    
 
     .contact_grid {
         display: grid;
