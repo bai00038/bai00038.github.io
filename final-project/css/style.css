@@ -98,8 +98,8 @@ label[for="site_search"] {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 60px;
-    bottom: 60px;
+    top: 10%;
+    bottom: 10%;
     background-color: #2222229e;
 }
 
@@ -459,6 +459,9 @@ label {
     grid-area: closed;
 }
 
+.location_content {
+    margin: 1rem;
+}
 .head,
 .body {
     font-size: 0.8rem;
