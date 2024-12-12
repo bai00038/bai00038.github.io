@@ -12,6 +12,39 @@ html {
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+    margin: 1rem;
+    padding-top: 1.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #222;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #222;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #222;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.8rem;
+    color: #222;
+    font-weight: 400;
+}
+
 /* nav global style */
 .nav_container {
     display: flex;
@@ -104,19 +137,10 @@ label[for="site_search"] {
 }
 
 /* Welcome to Three Star Media */
-.main_banner h1 {
-    font-size: 3rem;
-    color: white;
-    font-weight: 600;
-    margin: 1rem;
-    padding-top: 1.5rem;
-}
 
 /* paragraph style */
 .main_banner p {
-    font-size: 1rem;
     color: white;
-    font-weight: 300;
     padding: 0 1rem;
 }
 
@@ -161,19 +185,8 @@ label[for="site_search"] {
     background-size: cover;
 }
 
-/* About Us */
-.about_text h2 {
-    font-size: 3rem;
-    color: #222;
-    font-weight: 600;
-    margin-top: 1rem;
-}
-
 /* about paragraph style*/
 .about_text p {
-    font-size: 0.8rem;
-    color: #222;
-    font-weight: 400;
     margin: 0.8rem 0;
 }
 
@@ -208,26 +221,9 @@ label[for="site_search"] {
     margin: 1rem;
 }
 
-/* Our Sevices */
-.services_content h2 {
-    font-size: 3rem;
-    color: #222;
-    font-weight: 600;
-    margin-top: 2rem;
-}
-
 /* Digital transportation / Marketing / Video Production / Web Development / Print  */
 .services_content h3 {
-    font-size: 2rem;
-    color: #222;
-    font-weight: 600;
     margin-top: 1rem;
-}
-
-.services_content p {
-    font-size: 0.8rem;
-    color: #222;
-    font-weight: 400;
 }
 
 .services_content button {
@@ -268,14 +264,10 @@ label[for="site_search"] {
 .banner_content h2 {
     font-size: 2rem;
     color: white;
-    font-weight: 600;
-    margin-top: 1rem;
 }
 
 .banner_content p {
-    font-size: 0.8rem;
     color: white;
-    font-weight: 400;
     padding: 1rem 0;
 }
 
@@ -318,33 +310,7 @@ label[for="site_search"] {
     padding: 1rem;
 }
 
-/* our team */
-.team_content h2 {
-    font-size: 3rem;
-    color: #222;
-    font-weight: 600;
-}
-
-/* John Doe */
-/* Bob Rite */
-.team_content h3 {
-    font-size: 2rem;
-    color: #222;
-    font-weight: 600;
-}
-
-/* CEO and Co-owner */
-/* CFO and Co-owner */
-.team_content h4 {
-    font-size: 1rem;
-    color: #222;
-    font-weight: 600;
-}
-
 .team_content p {
-    font-size: 0.8rem;
-    color: #222;
-    font-weight: 400;
     margin-bottom: 0.8rem;
 }
 
@@ -373,21 +339,10 @@ label[for="site_search"] {
     display: block;
 }
 
-/* contact us */
-.contact_content h2 {
-    font-size: 3rem;
-    color: #222;
-    font-weight: 600;
-    /* margin-bottom: 1rem; */
-}
-
 /* send us a message */
 /* hours of operation */
 /* lacation */
 .contact_content h3 {
-    font-size: 2rem;
-    color: #222;
-    font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -459,8 +414,8 @@ label {
     grid-area: closed;
 }
 
-.map_container > iframe {
-    width: 100%; 
+.map_container>iframe {
+    width: 100%;
 }
 
 .head,
@@ -476,20 +431,25 @@ footer {
     padding: 2rem;
     background-color: #222;
     color: #bc8b2c;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 2rem;
     font-weight: 400;
 }
 
 footer a {
     color: #bc8b2c;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 2rem;
     font-weight: 400;
 }
 
+footer p {
+    color: #bc8b2c;
+}
+
 
 @media screen and (min-width:760px) {
+
     body {
         display: flex;
         flex-direction: column;
@@ -550,10 +510,6 @@ footer a {
 
     .toplayer {
         max-width: 1200px;
-    }
-
-    .main_banner h1 {
-        font-size: 4.5rem;
     }
 
     /* about us layout */
@@ -659,8 +615,6 @@ footer a {
         max-width: 1200px;
         margin: 0 auto;
     }
-
-    
 
     .contact_grid {
         display: grid;
